@@ -29,7 +29,7 @@ The dataset contains financial information such as:
 ## ⚡ Installation
 Clone the repository:
 ```bash
-git clone https://github.com/your_github_username/credit-scoring-model.git
+git clone https://github.com/Charanalp/credit-scoring-model.git
 cd credit-scoring-model
 **
 📝 Requirements**
