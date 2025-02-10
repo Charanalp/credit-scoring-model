@@ -1,64 +1,93 @@
-# credit-scoring-model
-Credit Scoring Model using Machine Learning | Predicting creditworthiness based on financial data with classification algorithms, feature scaling, and performance evaluation. Built with Python, scikit-learn, and pandas
-# Credit Scoring Model
+Credit Scoring Model
 
-This project focuses on developing a **Credit Scoring Model** to predict the creditworthiness of individuals based on historical financial data. The model uses machine learning classification algorithms to analyze customer data and assess the risk of default.
+📄 Project Description
 
-## 🚀 Features
-- Data Preprocessing and Cleaning
-- Handling Missing Values
-- Encoding Categorical Variables
-- Feature Scaling using StandardScaler
-- Model Training with Random Forest Classifier
-- Performance Evaluation (Accuracy, Confusion Matrix, Classification Report)
+The Credit Scoring Model is a machine learning project aimed at predicting the creditworthiness of individuals based on historical financial data. This model helps financial institutions assess potential risks before approving credit applications. Using classification algorithms, the model predicts whether a client is likely to repay a loan, enabling data-driven decision-making.
 
-## 📊 Dataset
-The dataset contains financial information such as:
-- **ACC_NO:** Account Number  
-- **INVESTMENT_TOTAL:** Total Investment  
-- **ACCCURRENTBALANCE:** Current Account Balance  
-- **INF_MARITAL_STATUS:** Marital Status  
-- **INF_GENDER:** Gender  
-- **INSTALL_SIZE:** Installment Size  
-- **DUE_PAYMENT:** Due Payment Amount  
-- **COMPENSATION_CHARGED:** Compensation Charged  
-- **CLIENT_TYPE:** Type of Client  
-- **QUALITY_OF_LOAN:** Quality Rating of Loan  
-- **REPAY_MODE:** Mode of Repayment (Target Variable)  
+🚀 Features
 
-## ⚡ Installation
-Clone the repository:
-```bash
+Predicts credit risk levels for individuals.
+
+Handles missing values and performs data preprocessing.
+
+Encodes categorical data for model compatibility.
+
+Scales features for improved model performance.
+
+Provides performance metrics including accuracy, precision, recall, F1-score, and confusion matrix.
+
+🛠️ Technologies Used
+
+Python
+
+Pandas - for data manipulation and analysis
+
+NumPy - for numerical computations
+
+Scikit-learn - for machine learning algorithms and performance evaluation
+
+Matplotlib & Seaborn - for data visualization
+
+Google Colab - for running the Jupyter notebook environment
+
+⚙️ How to Run
+
+Clone the Repository:
+
 git clone https://github.com/Charanalp/credit-scoring-model.git
 cd credit-scoring-model
-**
-📝 Requirements**
-Python 3.x
-pandas
-scikit-learn
-matplotlib
-seaborn
-imbalanced-learn (for handling imbalanced data)
 
+Upload the Dataset:
 
-Install the dependencies:
-pip install pandas scikit-learn matplotlib seaborn imbalanced-learn
+Download the dataset from Kaggle Dataset - Credit Risk Dataset.
 
-🚀 Running the Model
+Place train.xlsx and test.xlsx files in the project directory.
 
-jupyter notebook Credit_Scoring_Model.ipynb
-Or open it directly in Google Colab.
+Open Google Colab:
 
+Upload the Credit_Scoring_Model.ipynb file.
 
-📈 Model Performance
-Accuracy: 98.4%
-The model is currently biased towards class 'G' due to class imbalance. Improvements with SMOTE and class weighting are recommended.
+Run the notebook cell by cell.
+
+Install Required Libraries (if needed):
+
+!pip install pandas numpy scikit-learn matplotlib seaborn
+
+📊 Dataset Source
+
+Kaggle: Credit Risk Dataset
+
+Description: The dataset includes details like account information, investment totals, client demographics, loan quality, and repayment modes.
+
+📈 Results & Performance Metrics
+
+Accuracy: 98.40%
+
+📋 Classification Report:
+
+               precision    recall  f1-score   support
+
+           B       0.02      0.05      0.03        19
+          DF       0.00      0.00      0.00         4
+           G       0.99      0.99      0.99      4286
+          SS       0.00      0.00      0.00         1
+
+    accuracy                           0.98      4310
+   macro avg       0.25      0.26      0.26      4310
+weighted avg       0.99      0.98      0.99      4310
+
+🔍 Confusion Matrix:
+
+[[   1    0   18    0]
+ [   0    0    4    0]
+ [  46    0 4240    0]
+ [   0    0    1    0]]
+
 🤝 Contributing
-Feel free to fork this repository, submit pull requests, and suggest improvements.
 
-📧 Contact
-For queries, reach out to:
+Pull requests are welcome. For significant changes, please open an issue first to discuss what you would like to change.
 
-Charan - vtu23416@veltech.edu.in
+📜 License
 
+This project is licensed under the MIT License - see the LICENSE file for details.
 
